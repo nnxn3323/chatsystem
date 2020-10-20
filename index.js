@@ -10,6 +10,10 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
+const http = require("http");
+setInterval(function () {
+  http.get("http://chattingdoumi.herokuapp.com");
+}, 600000);
 
 app.get('/', function(req, res) {
     res.send('hw,world');
