@@ -7,7 +7,6 @@ app.use(express.static('files'));
 app.use('/static', express.static('public'));
 
 app.get('/', function (req, res) {
-  res.send('얼촙니당!');
 });
 app.use('/static', express.static(__dirname + '/public'));
 
