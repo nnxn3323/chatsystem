@@ -11,11 +11,6 @@ app.get('/', function (req, res) {
 });
 app.use('/static', express.static(__dirname + '/public'));
 
-const http = require("http");
-setInterval(function () {
-  http.get("http://chattingdoumi.herokuapp.com");
-}, 600000);
-
 var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;
