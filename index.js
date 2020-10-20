@@ -6,7 +6,7 @@ app.use(express.static('files'));
 
 app.use('/static', express.static('public'));
 
-app.get('/', function (req, res) {
+app.get('/', function (require, response) {
 });
 app.use('/static', express.static(__dirname + '/public'));
 
