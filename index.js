@@ -13,7 +13,7 @@ app.use('/static', express.static(__dirname + '/public'));
 
 const http = require("http");
 setInterval(function () {
-  http.get("http://서버주소.herokuapp.com");
+  http.get("http://chattingdoumi.herokuapp.com");
 }, 600000);
 
 var server = app.listen(3000, function () {
