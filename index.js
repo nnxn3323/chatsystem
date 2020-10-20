@@ -6,9 +6,11 @@ app.use(express.static('files'));
 
 app.use('/static', express.static('public'));
 
-app.get('/', function (require, response) {
+app.get('/', function (req, res) {
+  res.send('asdfasdf');
 });
 app.use('/static', express.static(__dirname + '/public'));
+
 
 var server = app.listen(8080, function () {
   var host = server.address().address;
